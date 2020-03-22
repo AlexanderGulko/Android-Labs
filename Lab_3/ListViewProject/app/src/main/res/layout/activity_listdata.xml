@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListdataActivity">
+
+    <TextView
+        android:id="@+id/listdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Audi A6 Avant"
+        android:textColor="#000"
+        android:textSize="35sp"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/listdata"
+        android:layout_marginTop="27dp"
+        android:src="@drawable/audi_2"/>
+
+    <TextView
+        android:id="@+id/listdata_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="310dp"
+        android:text="Features"
+        android:textColor="#000"
+        android:textSize="25sp"/>
+
+    <TextView
+        android:id="@+id/listdatacharact_1"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="360dp"
+        android:text="Engine capacity: 2.0L
+                     Horse power( useful ): 150
+                            Gearbox: 6M"
+        android:textColor="#000"
+        android:textSize="25sp"/>
+
+</RelativeLayout>
