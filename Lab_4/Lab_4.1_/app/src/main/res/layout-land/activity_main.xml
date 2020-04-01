@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/frag_land1"
+        android:name="com.example.lab4_fragmentsposition.FirstFragment"
+        android:layout_width="190dp"
+        android:layout_height="411dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/frag_land2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/frag_land2"
+        android:name="com.example.lab4_fragmentsposition.SecondFragment"
+        android:layout_width="206dp"
+        android:layout_height="206dp"
+        app:layout_constraintBottom_toTopOf="@+id/frag_land3"
+        app:layout_constraintEnd_toStartOf="@+id/frag_land4"
+        app:layout_constraintStart_toEndOf="@+id/frag_land1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <fragment
+        android:id="@+id/frag_land3"
+        android:name="com.example.lab4_fragmentsposition.ThirdFragment"
+        android:layout_width="206dp"
+        android:layout_height="206dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/frag_land4"
+        app:layout_constraintStart_toEndOf="@+id/frag_land1"
+        app:layout_constraintTop_toBottomOf="@+id/frag_land2" />
+
+    <fragment
+        android:id="@+id/frag_land4"
+        android:name="com.example.lab4_fragmentsposition.FourthFragment"
+        android:layout_width="335dp"
+        android:layout_height="411dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/frag_land2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
