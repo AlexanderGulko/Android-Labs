@@ -8,12 +8,16 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity implements ChoicePageFragment.OnFragmentInteractionListener {
 
+    // to manage fragments in Activity, use the FragmentManager object
+
     private FragmentManager manager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        // to get the FragmentManager object, call the getSupportFragmentManager () method
 
         manager = getSupportFragmentManager();
         manager.beginTransaction()
@@ -24,7 +28,13 @@ public class MainActivity extends AppCompatActivity implements ChoicePageFragmen
     public void onFragmentInteraction(String result) {
 
         String url = result;
+
+        // set a special selection operator
+
         switch (result){
+
+            // URL setting for required resources
+
             case "Google":
                 url = "https://www.google.com/";
                 break;
