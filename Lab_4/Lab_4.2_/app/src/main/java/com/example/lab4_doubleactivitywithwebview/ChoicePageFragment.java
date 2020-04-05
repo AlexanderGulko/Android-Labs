@@ -23,6 +23,9 @@ public class ChoicePageFragment extends Fragment implements AdapterView.OnItemCl
     private OnFragmentInteractionListener mListener;
 
     private String[] data = { "Google", "Facebook", "Twitter", "Xda-developers" };
+
+    // lifecycle method call #1
+
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
@@ -33,6 +36,9 @@ public class ChoicePageFragment extends Fragment implements AdapterView.OnItemCl
                     + " must implement OnFragmentInteractionListener");
         }
     }
+
+
+    // lifecycle method call #2
 
     @Override
     public void onDetach() {
@@ -46,6 +52,8 @@ public class ChoicePageFragment extends Fragment implements AdapterView.OnItemCl
         mListener.onFragmentInteraction(data[position]);
     }
 
+    // creating an interface that implements Activity
+
     public interface OnFragmentInteractionListener {
         void onFragmentInteraction(String result);
     }
@@ -58,9 +66,17 @@ public class ChoicePageFragment extends Fragment implements AdapterView.OnItemCl
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        // find the list
+
         ListView list = view.findViewById(R.id.list_view);
 
+        // create new ArrayAdapter and use simple_list_item_1 layout to which the data will be bound
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(view.getContext(), android.R.layout.simple_list_item_1, data);
+
+        // assign an adapter to the list
+
         list.setAdapter(adapter);
         list.setOnItemClickListener(this);
     }
