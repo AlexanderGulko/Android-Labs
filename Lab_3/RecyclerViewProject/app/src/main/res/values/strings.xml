@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">RecyclerViewLab_3</string>
+
+    <string-array name="car_names">
+        <item>Audi A6 Avant</item>
+        <item>Ford Mustang</item>
+        <item>Honda Civic</item>
+        <item>Mitsubishi EVO</item>
+        <item>Nissan GTR</item>
+    </string-array>
+
+    <string-array name="description">
+        <item>2014-2018</item>
+        <item>2009-2014</item>
+        <item>2008-2012</item>
+        <item>2007-...</item>
+        <item>2016-...</item>
+    </string-array>
+
+    <string-array name="charact">
+        <item>Engine capacity: 2.0L
+            Horse power( useful ): 150
+               Gearbox: 6M gear</item>
+        <item>Engine capacity: 5.0L
+            Horse power( useful ): 412
+               Gearbox: 6M gear</item>
+        <item>Engine capacity: 1.8L
+            Horse power( useful ): 140
+               Gearbox: 6A gear</item>
+        <item>Engine capacity: 2.0L Turbo
+              Horse power( useful ): 295
+                 Gearbox: 5M gear</item>
+        <item>Engine capacity: 3.8L
+            Horse power( useful ): 570
+               Gearbox: 6A gear</item>
+    </string-array>
+</resources>
